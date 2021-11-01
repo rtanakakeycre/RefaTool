@@ -1,1 +1,4 @@
 RefaTool/obj/
+RefaTool/bin/
+*.v2
+*.config
