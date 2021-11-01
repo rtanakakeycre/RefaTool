@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefaTool", "RefaTool\RefaTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilLib", "UtilLib\UtilLib.csproj", "{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmniLib", "CmniLib\CmniLib.csproj", "{F1A5158B-3DC5-4995-98A3-D681EEC128E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A5158B-3DC5-4995-98A3-D681EEC128E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A5158B-3DC5-4995-98A3-D681EEC128E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A5158B-3DC5-4995-98A3-D681EEC128E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A5158B-3DC5-4995-98A3-D681EEC128E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CmniLib\CmniLib.csproj">
+      <Project>{f1a5158b-3dc5-4995-98a3-d681eec128e1}</Project>
+      <Name>CmniLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UtilLib\UtilLib.csproj">
       <Project>{c8e7ddad-236e-4d1e-a7b6-c531229daef4}</Project>
       <Name>UtilLib</Name>
