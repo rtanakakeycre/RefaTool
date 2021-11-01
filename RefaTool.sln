@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefaTool", "RefaTool\RefaTool.csproj", "{2DD91D4A-667B-4D4C-A2E4-CA8E52BC0725}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CmniLib", "CmniLib\CmniLib.csproj", "{A1479BE7-ECF4-4C0C-9368-282146E9000B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilLib", "UtilLib\UtilLib.csproj", "{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2DD91D4A-667B-4D4C-A2E4-CA8E52BC0725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD91D4A-667B-4D4C-A2E4-CA8E52BC0725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD91D4A-667B-4D4C-A2E4-CA8E52BC0725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1479BE7-ECF4-4C0C-9368-282146E9000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1479BE7-ECF4-4C0C-9368-282146E9000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1479BE7-ECF4-4C0C-9368-282146E9000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1479BE7-ECF4-4C0C-9368-282146E9000B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E7DDAD-236E-4D1E-A7B6-C531229DAEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

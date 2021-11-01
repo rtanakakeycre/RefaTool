@@ -76,5 +76,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CmniLib\CmniLib.csproj">
+      <Project>{a1479be7-ecf4-4c0c-9368-282146e9000b}</Project>
+      <Name>CmniLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilLib\UtilLib.csproj">
+      <Project>{c8e7ddad-236e-4d1e-a7b6-c531229daef4}</Project>
+      <Name>UtilLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

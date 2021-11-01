@@ -1,0 +1,6 @@
+[submodule "CmniLib"]
+	path = CmniLib
+	url = https://github.com/rtanakakeycre/CmniLib.git
+[submodule "UtilLib"]
+	path = UtilLib
+	url = https://github.com/rtanakakeycre/UtilLib.git
