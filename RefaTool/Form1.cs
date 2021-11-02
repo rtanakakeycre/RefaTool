@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CmniLib;
+using UtilLib;
 
 namespace RefaTool
 {
     public partial class Form1 : Form
     {
-        CmniLib.sCMNI_PORT m_sCmniPort1;
+        sSER_SETS m_sSerSets;
         public Form1()
         {
             InitializeComponent();
@@ -20,12 +22,11 @@ namespace RefaTool
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            m_sCmniPort1 = new CmniLib.sCMNI_PORT();
+            Com.Deserialize("Sets.xml", ref m_sSerSets);
 
+            cmniCtrlUc1.AddCmniPort(m_sSerSets.m_sCmniPort1);
 
-            cmniCtrlUc1.AddCmniPort("1", m_sCmniPort1.m_sPortSets);
-
-            cmniEditUc1.SetPortSets(cmniCtrlUc1, m_sCmniPort1);
+            cmniEditUc1.SetPortSets(cmniCtrlUc1, m_sSerSets.m_sCmniPort1);
         }
 
         private void cmniEditUc1_Load(object sender, EventArgs e)
@@ -42,5 +43,25 @@ namespace RefaTool
         {
 
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Com.Serialize("Sets.xml", m_sSerSets);
+        }
     }
+
+    public class sSER_SETS
+    {
+        public sCMNI_PORT m_sCmniPort1;
+        public sCMNI_PORT m_sCmniPort2;
+
+        public sSER_SETS()
+        {
+            Com.InitData(this);
+            m_sCmniPort1 = new sCMNI_PORT();
+            m_sCmniPort2 = new sCMNI_PORT();
+        }
+
+    }
+
 }
