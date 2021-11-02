@@ -45,6 +45,12 @@ namespace RefaTool
             this.cmniEditUc1.Size = new System.Drawing.Size(189, 21);
             this.cmniEditUc1.TabIndex = 0;
             this.cmniEditUc1.Text = "1";
+            this.cmniEditUc1.Load += new System.EventHandler(this.cmniEditUc1_Load);
+            // 
+            // cmniCtrlUc1
+            // 
+            this.cmniCtrlUc1.m_dgRcvData += new CmniLib.dgRCV_DATA(this.cmniCtrlUc1_m_dgRcvData);
+            this.cmniCtrlUc1.m_dgPrsListUpd += new CmniLib.dgPRS_LIST_UPD(this.cmniCtrlUc1_m_dgPrsListUpd);
             // 
             // Form1
             // 
@@ -54,6 +60,7 @@ namespace RefaTool
             this.Controls.Add(this.cmniEditUc1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
