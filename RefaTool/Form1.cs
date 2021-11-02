@@ -12,6 +12,7 @@ namespace RefaTool
 {
     public partial class Form1 : Form
     {
+        CmniLib.sCMNI_PORT m_sCmniPort1;
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,12 @@ namespace RefaTool
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cmniEditUc1.SetPortSets(cmniCtrlUc1, new CmniLib.sCMNI_PORT());
+            m_sCmniPort1 = new CmniLib.sCMNI_PORT();
+
+
+            cmniCtrlUc1.AddCmniPort("1", m_sCmniPort1.m_sPortSets);
+
+            cmniEditUc1.SetPortSets(cmniCtrlUc1, m_sCmniPort1);
         }
 
         private void cmniEditUc1_Load(object sender, EventArgs e)
